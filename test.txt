@@ -1,0 +1,6 @@
+3 var1 string "fuck" 1
+3 var2 int 1000 0
+3 var3 int 450 1
+1 Fib
+3 var1 string "dick" 0
+3 haha real 22.2 1

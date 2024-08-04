@@ -1,0 +1,40 @@
+class test
+{
+/* 1: const a := 2 */
+	field static int b = 3
+/* 2: var b := 3 */
+/* 3:  */
+	method public static int addd(int, int)
+	max_stack 15
+	max_locals 15
+	{
+/* 4: function addd (a: int, b: int) : int */
+		iload 1
+		iload 2
+/* 5:   result a+b */
+		iadd
+		ireturn
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+/* 6: end addd */
+/* 7:  */
+/* 8: begin */
+		sipush 4
+		istore 3
+/* 9:     var c := 4 */
+		getstatic java.io.PrintStream java.lang.System.out
+		iload 1
+		iload 2
+		iadd
+		iload 3
+/* 10:     put a+b+c */
+		iadd
+		invokevirtual void java.io.PrintStream.println(int)
+/* 11: end */
+/* 12:  */
+		return
+	}
+}
